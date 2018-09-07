@@ -10,7 +10,7 @@ class TestSut(unittest.TestCase):
         sut.sumar=MagicMock(return_value=2)
         a = sut.costototal(3,2)
         print(a)
-        self.assertTrue(a == "El cost total es $2")
+        self.assertFalse(a == "El cost total es $2")
 
 
     def test_supercalc(self):
