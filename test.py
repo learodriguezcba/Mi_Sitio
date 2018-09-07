@@ -25,7 +25,7 @@ class TestSut(unittest.TestCase):
     	sqrt.return_value = 2
     	exp.return_value = 2
     	a = sut.supercalc(3)
-    	self.assertTrue(a == 2)
+    	self.assertFalse(a == 2)
 
 
 if __name__ == '__main__':
